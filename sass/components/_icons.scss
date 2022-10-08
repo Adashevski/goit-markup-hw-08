@@ -1,0 +1,54 @@
+.icon-envelope,
+.icon-smartphone {
+  fill: var(--text-secondary);
+  transition-duration: 250ms;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-logo {
+  fill: var(--fill);
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--fill);
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-logo:hover,
+.our-clients__link:focus .icon-logo {
+  fill: var(--brand-color);
+  border: 1px solid var(--brand-color);
+}
+.icon-social {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: white;
+  fill: var(--fill);
+  transition-duration: 250ms;
+  transition-property: fill, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-social2 {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff1a;
+  fill: var(--white);
+  transition-duration: 250ms;
+  transition-property: fill, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-social:hover,
+.icon-social2:hover,
+.team__icon:focus .icon-social,
+.footer__socials-link:focus .icon-social2 {
+  background-color: var(--brand-color);
+  fill: var(--white);
+  cursor: pointer;
+}
+.newsletter-icon {
+  margin-left: 24px;
+  fill: white;
+}

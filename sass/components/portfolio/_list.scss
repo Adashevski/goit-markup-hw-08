@@ -1,0 +1,46 @@
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 34px;
+  letter-spacing: 0.03em;
+  justify-content: center;
+  &__item {
+    border-bottom: 1px solid var(--border-figure);
+    flex-basis: calc((100% - 2 * 30px) / 3);
+    transition-duration: 250ms;
+    transition-property: box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      cursor: pointer;
+    }
+  }
+  &__figure {
+    margin: 0px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    padding: 20px 24px 4px 24px;
+    border-left: 1px solid var(--border-figure);
+    border-right: 1px solid var(--border-figure);
+    background-color: white;
+    z-index: 2;
+    position: relative;
+  }
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--text-secondary);
+    padding: 4px 24px 20px 24px;
+    border-left: 1px solid var(--border-figure);
+    border-right: 1px solid var(--border-figure);
+    background-color: white;
+    z-index: 2;
+    position: relative;
+  }
+}

@@ -1,0 +1,44 @@
+.banner {
+  padding: 200px 0;
+  background-image: linear-gradient(
+      0deg,
+      rgba(47, 48, 58, 0.4) 0%,
+      rgba(47, 48, 58, 0.4) 100%
+    ),
+    url(../images/banner_background.jpg);
+  width: 100%;
+  max-width: 1600px;
+  height: 600px;
+  margin: auto;
+  background-position: center;
+  &__button {
+    background-color: var(--brand-color);
+    border: 1px #9c9c9c;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  &__text {
+    color: var(--white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  &__button-text {
+    font-family: "Roboto";
+    color: var(--white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+}

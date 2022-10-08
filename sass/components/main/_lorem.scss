@@ -1,0 +1,27 @@
+.lorem {
+  padding-bottom: 0px;
+  &__icon-box {
+    background-color: var(--secondary-background);
+    height: 120px;
+    width: 270px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__list-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  }
+  &__list-text {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}

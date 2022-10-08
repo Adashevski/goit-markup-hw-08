@@ -1,0 +1,25 @@
+ul,
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0px;
+  padding: 0px;
+}
+img {
+  display: block;
+}
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  color: var(--text-primary);
+}
+.no-underline {
+  text-decoration: none;
+}
+.blue-text {
+  color: var(--brand-color);
+}
+.thumb {
+  position: relative;
+}

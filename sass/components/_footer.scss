@@ -1,0 +1,103 @@
+.footer {
+  color: var(--white);
+  background-color: var(--primary-background);
+  &__items {
+    display: flex;
+    padding-top: 60px;
+    flex-direction: column;
+    padding-bottom: 60px;
+  }
+  &__contacts {
+    margin-top: 20px;
+  }
+  &__contacts,
+  &__contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  &__contacts-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    color: var(--text-secondary);
+    transition-duration: 250ms;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  &__socials {
+    padding: 72px 0 100px 70px;
+  }
+  &__socials-list {
+    display: flex;
+    gap: 10px;
+  }
+  &__socials-title {
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+.studio {
+  color: var(--white);
+}
+.newsletter {
+  padding-top: 72px;
+  margin-left: auto;
+  &__title {
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  }
+  &__box {
+    display: flex;
+    gap: 12px;
+  }
+  &__input {
+    height: 50px;
+    width: 358px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--primary-background);
+    padding: 15px 16px;
+    outline: none;
+    transition-duration: 250ms;
+    transition-property: border;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+      border: solid 1px var(--brand-color);
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+  }
+  &__button-style {
+    background-color: var(--brand-color);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    cursor: pointer;
+    border: none;
+    font-family: "Roboto";
+    letter-spacing: 0.06em;
+    padding: 10px 28px 10px 42px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

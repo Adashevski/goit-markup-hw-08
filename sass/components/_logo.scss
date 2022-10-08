@@ -1,0 +1,17 @@
+.header__logo,
+.footer__logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--black);
+  &--web {
+    fill: var(--brand-color);
+    color: var(--brand-color);
+    cursor: pointer;
+  }
+}
+.header__logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
