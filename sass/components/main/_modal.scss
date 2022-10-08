@@ -77,9 +77,19 @@
       top: 2px;
       opacity: 1;
     }
+    &:checked {
+      ~ .modal__checkbox {
+        &--empty {
+          opacity: 0;
+        }
+        &--blue {
+          opacity: 1;
+        }
+      }
+    }
   }
 
-  &-agreement-text {
+  &__agreement-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -120,19 +130,13 @@
     &:hover,
     &:focus {
       border: solid 1px var(--brand-color);
+      + svg {
+        fill: var(--brand-color);
+      }
     }
   }
 }
-.modal__input:hover + svg,
-.modal__input:focus + svg {
-  fill: var(--brand-color);
-}
-.modal__checkbox:checked ~ .modal__checkbox--blue {
-  opacity: 1;
-}
-.modal__checkbox:checked ~ .modal__checkbox--empty {
-  opacity: 0;
-}
+
 .backdrop {
   position: fixed;
   left: 0px;

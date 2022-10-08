@@ -186,16 +186,16 @@ body {
   line-height: 1.19;
   color: var(--black);
 }
-.header__logo--web,
-.footer__logo--web {
-  fill: var(--brand-color);
-  color: var(--brand-color);
-  cursor: pointer;
-}
 
 .header__logo {
   padding-top: 24px;
   padding-bottom: 25px;
+}
+
+.web {
+  fill: var(--brand-color);
+  color: var(--brand-color);
+  cursor: pointer;
 }
 
 .icon-envelope,
@@ -242,13 +242,12 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.icon-social2 {
+.icon-social--white {
+  fill: var(--white);
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1019607843);
-  fill: var(--white);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-property: fill, background-color;
@@ -258,7 +257,7 @@ body {
 }
 
 .icon-social:hover,
-.icon-social2:hover,
+.icon-social--white:hover,
 .team__icon:focus .icon-social,
 .footer__socials-link:focus .icon-social2 {
   background-color: var(--brand-color);
@@ -677,7 +676,13 @@ body {
   top: 2px;
   opacity: 1;
 }
-.modal-agreement-text {
+.modal__checkbox:checked ~ .modal__checkbox--empty {
+  opacity: 0;
+}
+.modal__checkbox:checked ~ .modal__checkbox--blue {
+  opacity: 1;
+}
+.modal__agreement-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -723,18 +728,8 @@ body {
 .modal__input:hover, .modal__input:focus {
   border: solid 1px var(--brand-color);
 }
-
-.modal__input:hover + svg,
-.modal__input:focus + svg {
+.modal__input:hover + svg, .modal__input:focus + svg {
   fill: var(--brand-color);
-}
-
-.modal__checkbox:checked ~ .modal__checkbox--blue {
-  opacity: 1;
-}
-
-.modal__checkbox:checked ~ .modal__checkbox--empty {
-  opacity: 0;
 }
 
 .backdrop {
@@ -855,8 +850,7 @@ body {
   position: relative;
 }
 
-.overlay,
-.overlay-technocrack {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -874,8 +868,7 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.overlay__text,
-.overlay-technocrack__text {
+.overlay__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;

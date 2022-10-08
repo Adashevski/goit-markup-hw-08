@@ -29,19 +29,20 @@
   transition-duration: 250ms;
   transition-property: fill, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &--white {
+    fill: var(--white);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff1a;
+    transition-duration: 250ms;
+    transition-property: fill, background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
-.icon-social2 {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: #ffffff1a;
-  fill: var(--white);
-  transition-duration: 250ms;
-  transition-property: fill, background-color;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .icon-social:hover,
-.icon-social2:hover,
+.icon-social--white:hover,
 .team__icon:focus .icon-social,
 .footer__socials-link:focus .icon-social2 {
   background-color: var(--brand-color);
