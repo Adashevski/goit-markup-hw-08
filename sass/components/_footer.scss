@@ -1,10 +1,9 @@
 .footer {
+  text-align: center;
   color: var(--white);
   background-color: var(--primary-background);
   &__items {
-    display: flex;
     padding-top: 60px;
-    flex-direction: column;
     padding-bottom: 60px;
   }
   &__contacts {
@@ -12,8 +11,6 @@
   }
   &__contacts,
   &__contacts-list {
-    display: flex;
-    flex-direction: column;
     gap: 9px;
   }
   &__contacts-text {
@@ -31,11 +28,12 @@
     line-height: 1.7;
   }
   &__socials {
-    padding: 72px 0 100px 70px;
+    padding: 0;
   }
   &__socials-list {
     display: flex;
     gap: 10px;
+    justify-content: center;
   }
   &__socials-title {
     padding-bottom: 20px;
@@ -48,8 +46,7 @@
   color: var(--white);
 }
 .newsletter {
-  padding-top: 72px;
-  margin-left: auto;
+  padding-top: 60px;
   &__title {
     padding-bottom: 20px;
     font-weight: 700;
@@ -58,10 +55,10 @@
     letter-spacing: 0.03em;
   }
   &__box {
-    display: flex;
     gap: 12px;
   }
   &__input {
+    margin-bottom: 20px;
     height: 50px;
     width: 358px;
     font-weight: 400;
@@ -85,6 +82,7 @@
   &__button {
     display: flex;
     align-items: center;
+    margin: auto;
   }
   &__button-style {
     background-color: var(--brand-color);
@@ -99,5 +97,41 @@
     padding: 10px 28px 10px 42px;
     border-radius: 4px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-tablet {
+    display: flex;
+    gap: 144px;
+    justify-content: center;
+  }
+  .footer__socials {
+    padding-top: 65px;
+  }
+  .newsletter {
+    padding: 0;
+    &__input {
+      width: 450px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-tablet {
+    display: flex;
+  }
+  .footer-container {
+    display: flex;
+  }
+  .footer {
+    text-align: left;
+    &__socials {
+      padding: 72px 78px 0 70px;
+    }
+  }
+  .newsletter__box {
+    display: flex;
+  }
+  .newsletter__button {
+    margin-top: 0;
   }
 }

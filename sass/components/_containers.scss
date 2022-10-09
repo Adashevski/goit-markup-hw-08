@@ -1,14 +1,20 @@
 .container {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 .footer-container {
-  display: flex;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 .section {
   padding: 94px 0;
+}
+@media screen and (max-width: 1199px) {
+  .section {
+    padding: 60px 0;
+  }
 }
