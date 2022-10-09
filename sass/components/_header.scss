@@ -63,6 +63,13 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+.mobile-menu {
+  margin-inline-start: auto;
+}
+.mobile-menu:hover,
+.mobile-menu:focus {
+  fill: var(--brand-color);
+}
 .header__contacts-items:hover .header__contacts-text,
 .header__contacts-items:hover .icon-smartphone,
 .header__contacts-items:hover .icon-envelope,

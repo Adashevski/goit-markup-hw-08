@@ -1,34 +1,33 @@
 .lorem {
   padding-bottom: 0px;
   &__icon-box {
-    background-color: var(--secondary-background);
-    height: 120px;
-    width: 100%;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    padding: 25px 100px;
+    text-align: center;
+    padding: 20px 0;
   }
   &__list {
     gap: 30px;
-    max-width: 450px;
   }
   &__list-item {
-    margin-bottom: 30px;
+    background-color: var(--secondary-background);
+    border-radius: 4px;
   }
   &__list-title {
+    padding-top: 30px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    background-color: white;
   }
   &__list-text {
     color: var(--text-secondary);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    background-color: white;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .lorem__list {
     display: flex;
     justify-content: center;
@@ -43,7 +42,6 @@
 @media screen and (min-width: 1200px) {
   .lorem__list {
     display: flex;
-    max-width: 1600px;
     justify-content: center;
   }
   .lorem__list-item {
