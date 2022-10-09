@@ -1,18 +1,17 @@
 .banner {
-  padding: 200px 0;
+  // padding: 200px 0;
   background-image: linear-gradient(
-      0deg,
-      rgba(47, 48, 58, 0.4) 0%,
-      rgba(47, 48, 58, 0.4) 100%
-    ),
-    url(../images/banner_background.jpg);
-  width: 100%;
-  min-width: 320px;
-  max-width: 1600px;
-  height: 600px;
-  margin: auto;
-  background-position: center;
-  background-size: cover;
+    0deg,
+    rgba(47, 48, 58, 0.4) 0%,
+    rgba(47, 48, 58, 0.4) 100%
+  );
+  // width: 100%;
+  // min-width: 320px;
+  // max-width: 1600px;
+  // height: 600px;
+  // margin: auto;
+  // background-position: center;
+  // background-size: cover;
   &__button {
     background-color: var(--brand-color);
     border: 1px #9c9c9c;
@@ -46,40 +45,37 @@
 }
 @media screen and (min-width: 480px) {
   .banner {
-    background-color: rgba(47, 48, 58, 0.4) url(../images/banner_background.jpg);
+    background-image: url(../images/banner_background.jpg);
   }
 }
 @media screen and (min-width: 480px) and (min-resolution: 2dppx),
   (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi) {
   .banner {
-    background-color: rgba(47, 48, 58, 0.4)
-      url(../images/banner-backgroundx2.jpg);
+    background-image: url(../images/banner-backgroundx2.jpg);
   }
 }
 @media screen and (min-width: 728px) and (max-width: 1199px) {
   .banner {
-    background-color: rgba(47, 48, 58, 0.4) url(../images/banner_background.jpg);
+    background-image: url(../images/banner_background.jpg);
   }
 }
 @media screen and (min-width: 728px) and (max-width: 1199px) and (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .banner {
-    background-color: rgba(47, 48, 58, 0.4)
-      url(../images/banner-backgroundx2.jpg);
+    background-image: url(../images/banner-backgroundx2.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .banner {
-    background-color: rgba(47, 48, 58, 0.4) url(../images/banner_background.jpg);
+    background-image: url(../images/banner_background.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-resolution: 2dppx),
   (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi) {
   .banner {
-    background-color: rgba(47, 48, 58, 0.4)
-      url(../images/banner-backgroundx2.jpg);
+    background-image: url(../images/banner-backgroundx2.jpg);
   }
 }
