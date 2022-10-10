@@ -6,10 +6,10 @@
     url(../images/banner_background.jpg);
   width: 100%;
   min-width: 320px;
-  height: 400px;
   background-position: center;
   background-size: cover;
   margin: auto;
+  text-align: center;
   &__button {
     background-color: var(--brand-color);
     border: 1px #9c9c9c;
@@ -79,7 +79,6 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/banner_background.jpg);
-    height: 600px;
     padding: 200px 0;
     &__text {
       font-size: 44px;
@@ -97,7 +96,6 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/banner-backgroundx2.jpg);
-    height: 600px;
     padding: 200px 0;
     &__text {
       font-size: 44px;
@@ -113,7 +111,6 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/banner_background.jpg);
-    height: 600px;
     max-width: 1600px;
     padding: 200px 0;
     &__text {
@@ -132,7 +129,6 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/banner-backgroundx2.jpg);
-    height: 600px;
     max-width: 1600px;
     padding: 200px 0;
     &__text {
