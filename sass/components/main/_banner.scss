@@ -6,6 +6,7 @@
     url(../images/banner_background.jpg);
   width: 100%;
   min-width: 320px;
+  padding: 118px 0;
   background-position: center;
   background-size: cover;
   margin: auto;
@@ -28,7 +29,7 @@
     line-height: 1.61;
     letter-spacing: 0.06em;
     text-align: center;
-    padding-top: 118px;
+
     padding-bottom: 30px;
   }
   &__button-text {
